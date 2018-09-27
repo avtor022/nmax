@@ -21,7 +21,7 @@ RSpec.describe Nmax do
   end
 
   it ".show_numbers shows message: 'No numbers!'" do
-    expect(subject.show_numbers(text_without_numbers)).to eq("No numbers!")
+    expect(subject.show_numbers(5, text_without_numbers)).to eq("No numbers!")
   end
 
   it ".show_numbers shows error message: 'n' is Non-integer" do
