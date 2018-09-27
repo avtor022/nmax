@@ -9,7 +9,7 @@ RSpec.describe Nmax do
   let(:text_without_numbers) { File.open(test_without_numbers_path) }
 
   it ".show_numbers shows an array with 5 integers" do
-    expect(subject.show_numbers(5, text_with_numbers).all? { |a| a.class == Fixnum }).to be_truthy
+    expect(subject.show_numbers(5, text_with_numbers).all? { |a| a.class == Integer }).to be_truthy
   end
 
   it ".show_numbers shows an array with 3 elements" do

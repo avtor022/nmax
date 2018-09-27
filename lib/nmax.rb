@@ -14,7 +14,7 @@ module Nmax
       numbers = data.read.scan(/\d{1,1000}/).map(&:to_i)
       numbers == [] ? message = "No numbers!" : numbers.max(n)
     else
-      message = "Error: parameter 'number' must be Integer!"
+      "Error: parameter 'number' must be Integer!"
     end
   end
 
